@@ -12,40 +12,61 @@ body {
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  align-items: center;
 }
 .nav {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 .logo {
+  display: flex;
+  gap: 10px;
   font-weight: bold;
+  align-items: center; 
 }
 .nav a {
   color: pink;
   text-decoration: none;
-  padding: 14px;
-  border-radius: 5px;
-  text-align: center;
+  padding: 10px 14px;
+  border-radius: 20px;
+  transition: 0.3s;
 }
 .nav a:hover {
-  background-color: rgb(180, 93, 107);
+  background-color: rgb(255, 172, 186);
+  color: white;
 }
-section {
+.glav {
   background-color: pink;
   text-decoration: none;
-  padding: 10px;
+  padding: 100px 20px;
   color: white;
   text-align: center;
 }
 .glav h1 {
   font-size: 34px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+.glav p {
+  margin-bottom: 40px;
+  font-size: 18px;
 }
 .button {
   color: pink;
   text-decoration: none;
   padding: 14px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 20px;
+}
+.button:hover{
+  background-color: rgb(255, 172, 186);
+  color: white;
+}
+.logo_f{
+  width: 50px;
+  height: 50px;
+}
+.logo_t{
+  font-size: 22px;
+  color: pink;
+  font-weight: bold;
 }
