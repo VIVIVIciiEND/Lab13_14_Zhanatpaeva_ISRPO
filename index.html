@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная страница</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384
+FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <header class="header">
       <div class="logo">
         <img class="logo_f" src="/img/free-icon-lotus-4646215.png" />
@@ -19,48 +27,22 @@
         <a href="foto.html">Фото</a>
       </nav>
     </header>
-    <section class="glav">
+    <section class="glav" id = "glav">
       <h1>Добро пожаловать в TechStore</h1>
       <p>Лучшая техника в городе</p>
       <a class="button" href="catalog.html">Посмотреть каталог</a>
     </section>
-    <main class ="catalog">
-      <aside class="filter">
-        <h3>Фильтр</h3>
-        <h4>price</h4>
-        <ul class = "price_fil">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div class = "color_fil">
-          <h4>color</h4>
-          <ul>
-          <li>
-            <img src="" alt="">
-            <button>касный</button>
-          </li>
-          <li>
-            <img src="" alt="">
-            <button>касный</button>
-          </li>
-          <li>
-            <img src="" alt="">
-            <button>касный</button>
-          </li>
-          <li>
-            <img src="" alt="">
-            <button>касный</button>
-          </li>
-          <li>
-            <img src="" alt="">
-            <button>касный</button>
-          </li>
-          </ul>
-        </div>
-      </aside>
+    <main class ="catalog" id = "catalog">
+      <h1 style="text-align: center; color: pink">Каталог</h1>
       <div class = "cards">
+        <div class = "card">
+          <img  class= "product" src="https://i.pinimg.com/1200x/15/8e/1b/158e1b6ef773b38922c829d072d0cf84.jpg">
+          <div class = "about">
+            <h1>Стол</h1>
+            <p>крутой стол</p>
+            <h2 class="price">15000</h2>
+            <img class = "icon_p" src="/img/free-icon-heart-1077035 (1).png"></div>
+        </div>
         <div class = "card">
           <img  class= "product" src="https://i.pinimg.com/1200x/15/8e/1b/158e1b6ef773b38922c829d072d0cf84.jpg">
           <div class = "about">
@@ -127,8 +109,75 @@
         </div>
       </div>
     </main>
-    <footer>
+    <section></section>
+    <div id="carouselExampleCaptions" class="carousel slide" >
+      <h1 style="text-align: center; color: pink">Наши преимущество</h1>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/1200x/2f/06/3b/2f063b31e35597ce7966d19f88fdd3b4.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Надежная доставка</h5>
+        <p>Придоставляем услугу доставки</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/18/b8/4c/18b84ccb706d08bc85f01e6666693f12.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Безопасность и надежность</h5>
+        <p>Обеспечиваем безопасный виды платежей и гарантируем надежности</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/54/dd/86/54dd8619ad09d3e471dced9acea89457.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Экологичность</h5>
+        <p>Мы занимаемя безопасной утилизации товаров не вредя природе</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-    </footer>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-4 mb-4">
+<h5>О компании</h5>
+<p>
+Крутой магзин бытовой техники 
+</p>
+</div>
+<div class="col-md-4 mb-4">
+<h5>Быстрые ссылки</h5>
+<ul class="list-unstyled">
+<li><a href="#glav">Главная</a></li>
+<li><a href="#catalog">Каталог</a></li>
+<li><a href="#carouselExampleCaptions">Наши преимущество</a></li>
+</ul>
+</div>
+<div class="col-md-4 mb-4">
+<h5>Контакты</h5>
+<ul class="list-unstyled">
+<li>Email: почта@mail.com</li>
+<li>Телефон: +7 (999) 123-45-67</li>
+<li>Адрес: Волжский, ул. Пушкина, д. Колотушкино</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
   </body>
 </html>

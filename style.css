@@ -37,11 +37,14 @@ body {
 }
 .glav {
   background-color: pink;
+  position: relative;
   text-decoration: none;
-  padding: 100px 20px;
+  padding: 300px 20px;
   color: white;
   text-align: center;
+  overflow: hidden;
 }
+
 .glav h1 {
   font-size: 34px;
   margin-bottom: 25px;
@@ -71,33 +74,37 @@ body {
   font-weight: bold;
 }
 .catalog{
-  display: flex;
-  gap: 30px;
-  padding: 40px;
-}
+  padding: 80px 0;
+} 
 .filter{
   width: 250px;
+  height: 600px;
   border: 2px solid pink;
   border-radius: 20px;
   padding: 20px;
 }
 .cards{
-  flex-wrap: wrap;
-  display: flex;
-  gap: 20px ;
-  padding: 10px 14px;
-  border-radius: 15px ;
+  max-width: 1200px;
+  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.card:hover {
+  transform: translateY(-5px);
 }
 .card{
   background-color: pink;
   color: white;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 20px;
 }
 .product{
-  width: 250px;
+  width: 100%;
   height: 300px;
+  object-fit: cover;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 .icon_p{
   width: 20px;
@@ -107,4 +114,41 @@ body {
   background-color: white;
   color: rgb(190, 126, 137);
   border-radius: 15px;
+}
+.about h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+footer {
+background-color: pink;
+color: white;
+padding: 40px 0;
+margin-top: 80px;
+}
+footer h5 {
+color: #ffffff;
+margin-bottom: 20px;
+}
+footer a {
+color: rgba(255, 255, 255, 0.7);
+text-decoration: none;
+transition: color 0.3s ease;
+}
+footer a:hover {
+color: #ffffff;
+}
+#carouselExampleCaptions {
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
 }
