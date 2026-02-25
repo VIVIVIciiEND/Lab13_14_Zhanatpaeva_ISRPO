@@ -152,3 +152,44 @@ color: #ffffff;
   object-fit: cover;
   border-radius: 20px;
 }
+@media (max-width: 575px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .glav {
+    padding: 80px 20px;
+  }
+  .glav h1 {
+    font-size: 26px;
+  }
+  .glav p {
+    font-size: 16px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 0 20px;
+  }
+  .catalog {
+    padding: 50px 0;
+  }
+  #carouselExampleCaptions {
+    max-width: 100%;
+    margin: 40px 15px;
+  }
+  .carousel-inner img {
+    height: 250px;
+  }
+  footer .row {
+    text-align: center;
+  }
+  footer .col-md-4 {
+    margin-bottom: 25px;
+  }
+
+}
